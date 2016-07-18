@@ -15,10 +15,10 @@ redis> EVALSHA SHA1 2 key command ...args
 Put new item into graph: `put SUBJECT PREDICATE OBJECT`
 
 ```
-redis> EVALSHA SHA1 2 graph put Alice friend Bob > /dev/null
-redis> EVALSHA SHA1 2 graph put Alice friend Carol > /dev/null
-redis> EVALSHA SHA1 2 graph put Bob friend Dan > /dev/null
-redis> EVALSHA SHA1 2 graph put Carol friend Alice > /dev/null
+redis> EVALSHA SHA1 2 graph put Alice friend Bob
+redis> EVALSHA SHA1 2 graph put Alice friend Carol
+redis> EVALSHA SHA1 2 graph put Bob friend Dan
+redis> EVALSHA SHA1 2 graph put Carol friend Alice
 ```
 
 ### Get item
